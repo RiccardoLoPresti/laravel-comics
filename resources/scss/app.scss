@@ -194,3 +194,104 @@ section{
     }
 
 }
+
+footer{
+    width: 100%;
+    height: 370px;
+    background-color: #303030;
+    .main-wrapper{
+        width: 100%;
+        background-image: url('../img/footer-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        .container-footertop{
+            background-image:url('../img/dc-logo-bg.png') ;
+            background-repeat: no-repeat;
+            background-position:right ;
+            nav{
+                width: 100%;
+                padding-top: 37px;
+                padding-bottom: 0px;
+                height: 370px;
+                width: 40%;
+                ul{
+                    height: 300px;
+                    display: flex;
+                    flex-grow: 0;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    li{
+                        display: flex;
+                        flex-direction: column;
+                        margin-right: 10px;
+                    }
+                }
+                h3{
+                    color:white;
+                    text-transform: uppercase;
+                    margin: 13px 0;
+                    font-size: 1.2rem;
+                }
+                a{
+                    font-size: .8rem;
+                    margin: 3px 0px;
+                    color: rgb(151, 151, 151);
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .sign-up{
+                height: 110px;
+            }
+        }
+    }
+}
+
+
+.footer-bot{
+    height: 110px;
+    width: 100%;
+    background-color: #303030;
+    .container-footertbottom{
+        height: 100%;
+        @include centerFlex('vertical');
+        justify-content: space-between;
+        .sign-up{
+            height: 100%;
+            min-width: 150px;
+            @include centerFlex('vertical');
+                a{
+                    color: white;
+                    padding: 10px;
+                    text-transform: uppercase;
+                    border: 2px solid $primary-color;
+                    &:hover{
+                        background-color: lighten($primary-color, 0%);
+                    }
+                }
+        }
+    }
+    .socials{
+        @include centerFlex();
+        h3{
+            text-transform: uppercase;
+            color: $primary-color;
+            padding-right: 5px;
+            font-size: 1rem;
+        }
+        ul{
+            @include centerFlex();
+            flex-wrap: wrap;
+            a:hover img{
+                filter: brightness(160%);
+            }
+        }
+        img{
+            margin: 0px 10px;
+            min-width: 35px;
+        }
+    }
+}
+
+

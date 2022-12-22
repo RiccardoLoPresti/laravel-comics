@@ -117,7 +117,31 @@ Route::get('/', function () {
         ],
     ];
 
-    return view('home', compact('collections','elements'));
+    $objetcs=[
+        [
+            "title"=> 'DC Comics'
+        ],
+        [
+            "title"=> 'DC Comics'
+        ],
+        [
+            "title"=> 'DC Comics'
+        ],
+        [
+            "title"=> 'DC Comics'
+        ],
+        [
+            "title"=> 'DC Comics'
+        ],
+        [
+            "title"=> 'DC Comics'
+        ],
+        [
+            "title"=> 'DC Comics'
+        ],
+    ];
+
+    return view('home', compact('collections','elements','objetcs'));
 })->name('home');
 
 Route::get('/comics', function () {
