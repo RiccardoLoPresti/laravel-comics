@@ -245,29 +245,120 @@ return [
 
     "objetcs"=>[
         [
-            "title"=> 'DC Comics'
+            "title"=> 'DC Comics',
+            "subtitle"=>[
+                'categoria',
+                'categoria',
+                'categoria',
+                'categoria',
+                'categoria',
+                'categoria',
+                'categoria',
+                'categoria',
+            ]
         ],
         [
-            "title"=> 'DC Comics'
+            "title"=> 'DC Comics',
+            "subtitle"=>[
+                'categoria',
+                'categoria',
+                'categoria',
+                'categoria',
+                'categoria',
+                'categoria',
+                'categoria',
+                'categoria',
+            ]
         ],
         [
-            "title"=> 'DC Comics'
+            "title"=> 'DC Comics',
+            "subtitle"=>[
+                'categoria',
+                'categoria',
+                'categoria',
+                'categoria',
+                'categoria',
+                'categoria',
+                'categoria',
+                'categoria',
+            ]
         ],
         [
-            "title"=> 'DC Comics'
+            "title"=> 'DC Comics',
+            "subtitle"=>[
+                'categoria',
+                'categoria',
+                'categoria',
+                'categoria',
+                'categoria',
+                'categoria',
+                'categoria',
+                'categoria',
+            ]
         ],
         [
-            "title"=> 'DC Comics'
+            "title"=> 'DC Comics',
+            "subtitle"=>[
+                'categoria',
+                'categoria',
+                'categoria',
+                'categoria',
+                'categoria',
+                'categoria',
+                'categoria',
+                'categoria',
+            ]
         ],
         [
-            "title"=> 'DC Comics'
+            "title"=> 'DC Comics',
+            "subtitle"=>[
+                'categoria',
+                'categoria',
+                'categoria',
+                'categoria',
+                'categoria',
+                'categoria',
+                'categoria',
+                'categoria',
+            ]
         ],
         [
-            "title"=> 'DC Comics'
+            "title"=> 'DC Comics',
+            "subtitle"=>[
+                'categoria',
+                'categoria',
+                'categoria',
+                'categoria',
+                'categoria',
+                'categoria',
+                'categoria',
+                'categoria',
+            ]
         ],
     ],
 
-
+    "socials"=>[
+        [
+            "img"=>'/footer-facebook.png',
+            "href"=>'#'
+        ],
+        [
+            "img"=>'/footer-periscope.png',
+            "href"=>'#'
+        ],
+        [
+            "img"=>'/footer-twitter.png',
+            "href"=>'#'
+        ],
+        [
+            "img"=>'/footer-youtube.png',
+            "href"=>'#'
+        ],
+        [
+            "img"=>'/footer-pinterest.png',
+            "href"=>'#'
+        ],
+    ]
 ];
 
 

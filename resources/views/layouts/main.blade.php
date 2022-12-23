@@ -10,9 +10,6 @@
 <body>
 
     @include('partials.header')
-    @include('partials.jumbo')
-    @include('partials.cards')
-    @include('partials.cta')
 
     @yield('content')
 

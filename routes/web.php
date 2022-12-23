@@ -14,14 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-
-    $cards= config('comics.posts');
-    $elements=config('comics.elements');
-    return view('home', compact('cards','elements'));
+    return view('home');
 })->name('home');
 
 Route::get('/comics', function () {
-    return view('comics');
+    $cards= config('comics.posts');
+    $elements=config('comics.elements');
+    return view('comics',compact('cards','elements'));
 })->name('comics');
 
 Route::get('/movies', function () {
@@ -55,3 +54,7 @@ Route::get('/news', function () {
 Route::get('/shop', function () {
     return view('shop');
 })->name('shop');
+
+Route::get('/card-detail', function () {
+    return view('cards_detail');
+})->name('card_detail');

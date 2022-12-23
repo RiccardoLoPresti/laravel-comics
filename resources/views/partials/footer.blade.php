@@ -9,8 +9,9 @@
 
                     @foreach (config('comics.objetcs') as $objetc )
                         <li >
-                            <h3></h3>
-                            <a href="#">{{$objetc['title']}}</a>
+                            <h3>{{$objetc['title']}}</h3>
+
+                            <a href="#">{{$objetc['subtitle'][1]}}</a>
                         </li>
                     @endforeach
 
@@ -31,11 +32,14 @@
             <div class="socials">
                 <h3>Follow us</h3>
                 <ul>
-                    {{-- <li v-for="(element, index) in elements" :key="index">
-                        <a href="#">
-                            <img :src="getPathImg(element.img)" :alt="element.img">
-                        </a>
-                    </li> --}}
+                    @foreach (config('comics.socials') as $social )
+                        <li>
+                            <a href="{{$social['href']}}">
+                                <img src="{{$social['img']}}" :alt="{{$social['img']}}">
+                            </a>
+                        </li>
+                    @endforeach
+
                 </ul>
             </div>
 

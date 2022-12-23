@@ -1,4 +1,7 @@
-<section>
+@extends('layouts.main')
+
+@section('content')
+<main>
     <div class="container container-cta">
 
         <nav>
@@ -21,4 +24,7 @@
         </nav>
 
     </div>
-  </section>
+  </main>
+
+@endsection
+

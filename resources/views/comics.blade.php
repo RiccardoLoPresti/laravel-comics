@@ -1,15 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    @vite('resources/js/app.js')
-    <title>Document</title>
-</head>
-<body>
-    @include('partials.header')
-    @include('partials.jumbo')
-    @include('partials.footer')
-</body>
-</html>
+@extends('layouts.main')
+
+@section('content')
+
+<main>
+    <div class="container container-cards">
+        <div class="card-section">
+
+            @foreach ($cards as $card )
+                <a href="#">
+                    <div class="cards">
+                        <img src="{{$card['thumb']}}" alt="{{$card['title']}}">
+                        <p>{{$card['title']}}</p>
+                        <div class="overlay">
+                            <p>{{$card['price']}}</p>
+                        </div>
+                    </div>
+                </a>
+
+            @endforeach
+
+        </div>
+
+        <div class="button">
+            <button>Load More</button>
+        </div>
+    </div>
+</main>
+
+@endsection
