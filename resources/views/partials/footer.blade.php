@@ -7,7 +7,7 @@
             <nav>
                 <ul>
 
-                    @foreach ($objetcs as $objetc )
+                    @foreach (config('comics.objetcs') as $objetc )
                         <li >
                             <h3></h3>
                             <a href="#">{{$objetc['title']}}</a>

@@ -17,8 +17,7 @@ Route::get('/', function () {
 
     $cards= config('comics.posts');
     $elements=config('comics.elements');
-    $objetcs=config('comics.objetcs');
-    return view('home', compact('cards','elements','objetcs'));
+    return view('home', compact('cards','elements'));
 })->name('home');
 
 Route::get('/comics', function () {
