@@ -55,6 +55,6 @@ Route::get('/shop', function () {
     return view('shop');
 })->name('shop');
 
-Route::get('/card-detail', function () {
+Route::get('/card-detail/{id}', function ($id) {
     return view('cards_detail');
 })->name('card_detail');

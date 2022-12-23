@@ -7,7 +7,7 @@
         <div class="card-section">
 
             @foreach ($cards as $card )
-                <a href="#">
+                <a href="{{route('card_detail', ['id' => $card['id']] )}}">
                     <div class="cards">
                         <img src="{{$card['thumb']}}" alt="{{$card['title']}}">
                         <p>{{$card['title']}}</p>

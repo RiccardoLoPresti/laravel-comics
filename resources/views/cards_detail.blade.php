@@ -1,5 +1,10 @@
 @extends('layouts.main')
 
 @section('content')
-    DEWWWWWWWWWWWWWWWWWWWWWWW
+<main>
+    <div class="container-detail">
+
+
+    </div>
+</main>
 @endsection
