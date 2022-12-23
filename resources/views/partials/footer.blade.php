@@ -31,11 +31,11 @@
             <div class="socials">
                 <h3>Follow us</h3>
                 <ul>
-                    <li v-for="(element, index) in elements" :key="index">
+                    {{-- <li v-for="(element, index) in elements" :key="index">
                         <a href="#">
                             <img :src="getPathImg(element.img)" :alt="element.img">
                         </a>
-                    </li>
+                    </li> --}}
                 </ul>
             </div>
 

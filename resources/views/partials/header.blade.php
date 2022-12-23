@@ -9,7 +9,7 @@
         <nav>
             <ul>
                 <li>
-                    <a class="{{ Route::currentRouteName() === 'home' ? 'active' : '' }}" href="{{route('home')}}">home</a>
+                    <a class="{{ Route::currentRouteName() === 'home' ? 'active' : '' }}" href="{{route('home')}}">charaters</a>
                     <a class="{{ Route::currentRouteName() === 'comics' ? 'active' : '' }}" href="{{route('comics')}}">comics</a>
                     <a class="{{ Route::currentRouteName() === 'movies' ? 'active' : '' }}" href="{{route('movies')}}">movie</a>
                     <a class="{{ Route::currentRouteName() === 'tv' ? 'active' : '' }}" href="{{route('tv')}}">tv</a>

@@ -2,12 +2,12 @@
     <div class="container container-cards">
         <div class="card-section">
 
-            @foreach ($collections as $collection )
+            @foreach ($cards as $card )
                 <div class="cards">
-                    <img src="{{$collection['thumb']}}" alt="{{$collection['series']}}">
-                    <p>{{$collection['series']}}</p>
+                    <img src="{{$card['thumb']}}" alt="{{$card['title']}}">
+                    <p>{{$card['title']}}</p>
                     <div class="overlay">
-                        <p>{{$collection['price']}}</p>
+                        <p>{{$card['price']}}</p>
                     </div>
                 </div>
             @endforeach
